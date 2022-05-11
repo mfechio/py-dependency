@@ -5,13 +5,13 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
+  - package-ecosystem: "pip" # See documentation for possible values    
+    directory: "/" # Location of package manifests
     registries:
       github-octocat:
         type: git
         url: https://github.com
         username: mfechio
         password: ${{secrets.GITHUB}}
-    directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
