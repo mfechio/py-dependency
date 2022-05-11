@@ -6,6 +6,7 @@ authors = ["Murilo <murilofechio@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+lib = {git = "git@github.com:mfechio/lib.git", tag = "0.0.1"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
