@@ -8,8 +8,8 @@ registries:
   github-mfechio:
     type: git
     url: https://github.com
-    username: ${{secrets.USER_NAME}}
-    password: ${{secrets.PASSWORD}}
+    username: x-access-token
+    password: ${{secrets.MY_GITHUB_PERSONAL_TOKEN}}
 updates:
   - package-ecosystem: "pip"
     directory: "/"
