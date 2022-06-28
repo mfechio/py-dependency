@@ -4,8 +4,16 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+registries:
+  github-mfechio:
+    type: git
+    url: https://github.com/mfechio/mfechiolib
+    username: ${{secrets.USER_NAME}}
+    password: ${{secrets.PASSWORD}}
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values    
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "pip"
+    directory: "/"
+    registries:
+      - github-mfechio
     schedule:
       interval: "daily"
