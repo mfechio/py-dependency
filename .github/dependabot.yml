@@ -10,5 +10,6 @@ updates:
     directory: "/"
     registries:
       - github-mfechio
+    insecure-external-code-execution: allow
     schedule:
       interval: "daily"
